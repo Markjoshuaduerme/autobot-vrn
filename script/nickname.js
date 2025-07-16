@@ -1,7 +1,7 @@
 const config = require("../config.json");
 
 module.exports.config = {
-    name: "nickname",
+    name: "Keijo",
     version: "1.0.0",
     role: 0,
     description: "Automatically sets the bot's nickname when added to a group.",
@@ -20,7 +20,7 @@ module.exports.handleEvent = async function ({ api, event }) {
             event.logMessageData.addedParticipants.some(user => user.userFbId === api.getCurrentUserID())
         ) {
             const botID = api.getCurrentUserID();
-            const botName = config.botName || "Bot";
+            const botName = config.botName || "BOT";
 
             api.changeNickname(botName, event.threadID, botID, (err) => {
                 if (err) console.error("❌ Failed to set nickname:", err);

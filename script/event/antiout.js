@@ -16,7 +16,7 @@ module.exports.handleEvent = async ({
       if (error) {
         api.sendMessage(`di ko ma add si ${name} iwan ko kong bakit`, event.threadID);
       } else {
-        api.sendMessage(`boss ${name} bawal kapo mag leave tanginamo paalam ka muna kay vern`, event.threadID);
+        api.sendMessage(`boss ${name} bawal kapo mag leave tanginamo paalam ka muna kay Keijo`, event.threadID);
       }
     });
   }

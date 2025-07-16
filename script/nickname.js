@@ -1,7 +1,7 @@
 const config = require("../config.json");
 
 module.exports.config = {
-    name: "nickname",
+    name: "Keijo",
     version: "1.0.0",
     role: 0,
     description: "Automatically sets the bot's nickname when added to a group.",
